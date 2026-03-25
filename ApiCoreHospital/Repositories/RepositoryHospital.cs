@@ -19,7 +19,7 @@ namespace ApiCoreHospital.Repositories
             return await this.context.Hospitales.ToListAsync();
         }
 
-        public async Task<Hospital> FindHospitalIdAsync( int id)
+        public async Task<Hospital> FindHospitalIdAsync(int id)
         {
             return await this.context.Hospitales.FirstOrDefaultAsync(h => h.IdHospital == id);
         }
